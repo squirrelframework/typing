@@ -79,7 +79,7 @@ abstract class Object
      * Class constructor must be compatible with
      * this kind of instanciation.
      *
-     * @param  mixed           argument
+     * @param mixed argument
      * @return Squirrel\Object casted argument
      */
     public static function cast($argument)
@@ -97,8 +97,8 @@ abstract class Object
     /**
      * Returns whether given class is child of called class.
      *
-     * @param  string class name
-     * @return bool
+     * @param string class name
+     * @return boolean
      */
     public static function isChild($name)
     {
@@ -109,8 +109,8 @@ abstract class Object
     /**
      * Returns whether instance has given method or not.
      *
-     * @param  string method name
-     * @return bool
+     * @param string method name
+     * @return boolean
      */
     public function hasMethod($name)
     {
@@ -120,7 +120,7 @@ abstract class Object
     /**
      * Gets a callback for given method.
      *
-     * @param  string method name
+     * @param string method name
      * @return Callback
      */
     public function callback($name)
@@ -135,8 +135,8 @@ abstract class Object
      * This method can be overriden in children classes
      * to provide a more accurate behavior.
      *
-     * @param  mixed param
-     * @return bool
+     * @param mixed param
+     * @return boolean
      */
     public function equals($param)
     {
@@ -147,7 +147,7 @@ abstract class Object
      * Dumps object for debug, can be overriden
      * for better display.
      *
-     * @param  bool return
+     * @param boolean return
      * @return void|string
      */
     public function dump($return = false)

@@ -6,7 +6,7 @@ namespace Squirrel\Typing;
  * Object wrapper for array functions.
  *
  * @package Squirrel\Typing
- * @author  Valérian
+ * @author Valérian Galliat
  */
 class Collection extends Object implements \IteratorAggregate, \ArrayAccess, \Countable
 {
@@ -186,8 +186,8 @@ class Collection extends Object implements \IteratorAggregate, \ArrayAccess, \Co
     /**
      * Simplier slice method.
      *
-     * @param int start
-     * @param int length
+     * @param integer start
+     * @param integer length
      * @return Collection
      */
     public function cut($start, $length = null)

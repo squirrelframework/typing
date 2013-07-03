@@ -7,7 +7,7 @@ namespace Squirrel\Typing;
  * functions or methods.
  *
  * @package Squirrel\Typing
- * @author  Valérian
+ * @author Valérian Galliat
  */
 class Callback extends Object
 {
@@ -135,7 +135,7 @@ class Callback extends Object
     /**
      * Returns whether callback is callable or not.
      *
-     * @return bool
+     * @return boolean
      */
     public function isCallable()
     {
@@ -145,7 +145,7 @@ class Callback extends Object
     /**
      * Returns whether callback is a class method or not.
      *
-     * @return bool
+     * @return boolean
      */
     public function isMethod()
     {
@@ -171,7 +171,7 @@ class Callback extends Object
      * Invokes callback with given arguments array.
      *
      * @throws Squirrel\Exception
-     * @param  array
+     * @param mixed[]
      * @return mixed
      */
     public function apply(array $arguments = null)
